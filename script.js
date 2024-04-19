@@ -8,10 +8,9 @@ let arr = [
     //Write your code here , just console.log
     const output = arr.map((x) => {
         if (x.profession == "developer"){
-            return x.name;}
+            console.log(x);}
     
         });
-        console.log(output);
   }
 
   
@@ -19,10 +18,10 @@ let arr = [
     //Write your code here , just console.log
     const output = arr.forEach((x) => {
         if (x.profession == "developer"){
-            return x.name;}
+           console.log()x;}
     
         });
-        console.log(output);
+       
 
     
   }
@@ -36,12 +35,12 @@ let arr = [
   
   function removeAdmin() {
     //Write your code here, just console.log
-    for(let t of arr){
-        if(t.profession=="admin"){
-            delete arr.t;
-        }
-    }
-    console.log(arr);
+   arr = arr.filter(x => {
+       if(x.profession!== "admin"){
+           return x;
+       }
+   });
+    
   }
   
   function concatenateArray() {
